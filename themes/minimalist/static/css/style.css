@@ -102,6 +102,10 @@ h2 {
   min-height: 100vh !important;
 }
 
+.max-height-100vh {
+  max: 100vh !important;
+}
+
 .padding-sm {
   padding: var(--s-1) !important;
 }
@@ -112,6 +116,10 @@ h2 {
 
 .padding-lg {
   padding: var(--s2) !important;
+}
+
+.margin-top-lg {
+  margin-top: var(--s2) !important;
 }
 
 .width-sm {
