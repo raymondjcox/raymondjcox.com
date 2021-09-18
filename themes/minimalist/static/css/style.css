@@ -94,6 +94,10 @@ h2 {
   align-items: center !important;
 }
 
+.text-align-center {
+  text-align: center !important;
+}
+
 .justify-content-space-between {
   justify-content: space-between !important;
 }
