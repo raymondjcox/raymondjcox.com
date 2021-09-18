@@ -1,5 +1,7 @@
 FROM nginx:alpine as build
 
+ENV PORT 80
+
 RUN apk add --update \
     wget
     
