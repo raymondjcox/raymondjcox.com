@@ -103,7 +103,7 @@ h2 {
 }
 
 .max-height-100vh {
-  max: 100vh !important;
+  max-height: 100vh !important;
 }
 
 .padding-sm {
