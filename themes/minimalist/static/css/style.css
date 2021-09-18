@@ -1,0 +1,151 @@
+:root {
+  --ratio: 1.5;
+  --s-5: calc(var(--s-4) / var(--ratio));
+  --s-4: calc(var(--s-3) / var(--ratio));
+  --s-3: calc(var(--s-2) / var(--ratio));
+  --s-2: calc(var(--s-1) / var(--ratio));
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));
+  --s3: calc(var(--s2) * var(--ratio));
+  --s4: calc(var(--s3) * var(--ratio));
+  --s5: calc(var(--s4) * var(--ratio));
+  --color-light: hsl(0, 0%, 100%);
+  --color-dark: hsl(0, 0%, 0%);
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: var(--font-family);
+  color: var(--color-dark);
+  background-color: var(--color-light);
+}
+
+.invert {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+svg {
+  fill: var(--color-dark);
+}
+
+.invert svg {
+  fill: var(--color-light)
+}
+
+*, :after, :before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+h1 {
+  font-size: var(--s2);
+}
+
+h2 {
+  font-size: var(--s1);
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.stack > *, stack-lg > *, stack-recursive > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.stack-horiz > *, .stack-horiz-sm > * {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.stack-horiz, .stack-horiz-sm {
+  display: flex;
+}
+
+.stack-horiz > * + * {
+  margin-left: var(--s0);
+}
+
+.stack-horiz-sm > * + * {
+  margin-left: var(--s-2);
+}
+
+.stack-recursive * + *, .stack > * + * {
+  margin-top: var(--s0);
+}
+
+.stack-lg > * + * {
+  margin-top: var(--s3);
+}
+
+.flex {
+  display: flex !important;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+.justify-content-space-between {
+  justify-content: space-between !important;
+}
+
+.min-height-100vh {
+  min-height: 100vh !important;
+}
+
+.padding-sm {
+  padding: var(--s-1) !important;
+}
+
+.padding-md {
+  padding: var(--s1) !important;
+}
+
+.padding-lg {
+  padding: var(--s2) !important;
+}
+
+.width-sm {
+  width: var(--s-1) !important;
+}
+
+.width-md {
+  width: var(--s0) !important;
+}
+
+.width-lg {
+  width: 16rem !important;
+}
+
+.height-sm {
+  height: var(--s-1) !important;
+}
+
+.height-lg {
+  height: 16rem !important;
+}
+
+.fill-twitter-blue {
+  fill: #1DA1F2;
+}
+
+.border-radius-xl {
+  border-radius: 100% !important;
+}
+
+.object-position-top {
+  object-position: top !important;
+}
+
+.object-fit-cover {
+  object-fit: cover !important;
+}
