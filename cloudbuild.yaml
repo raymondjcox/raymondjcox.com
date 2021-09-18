@@ -8,7 +8,7 @@ steps:
 # Deploy container image to Cloud Run
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
-  args: ['run', 'deploy', 'raymondjcox', '--image', 'gcr.io/shaped-buttress-192118/raymondjcox.com:latest', '--region', 'us-central1', '--platform', 'managed']
+  args: ['run', 'deploy', 'raymondjcox-com', '--image', 'gcr.io/shaped-buttress-192118/raymondjcox.com:latest', '--region', 'us-central1', '--platform', 'managed']
 timeout: 3600s
 images:
   - gcr.io/shaped-buttress-192118/raymondjcox.com:latest
